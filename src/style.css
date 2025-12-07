@@ -47,24 +47,20 @@ main    {
     padding: 40px 0;
 }
 
-.current-temp {
+.current-weatehr-temp {
     font-size: 48px;
     font-weight: bold;
     margin: 20px 0;
 }
 
-.current-weather-temp {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
+
 
 .current-city {
     font-size: 32px;
     margin: 0;
 }   
 
-.current-conditions {
+.current-weather-conditions {
     font-size: 16px;
     margin: 5px 0 0 0;
     display: flex;
@@ -74,7 +70,7 @@ main    {
     
 }
 
-.current-conditions strong {
+.current-weather-conditions strong {
      color: #f65282;
     
 }
