@@ -12,36 +12,40 @@
     <title>Final Project Weather App</title>
 </head>
 <body>
-    <div class="weather-app">
-<header>     
+<div class="weather-app">
+<header>
   <form id="search-form">
-    <input type="text" id="city-input" placeholder="Enter city name" required />
-    <button type="submit">Search</button>
-    </form>
-    </header>
-    <main>
-        <div>
-            <h1>Kingston</h1>
-            <p>
-                Monday 07:00, Mostly cloudy
-                <br />
-              Precipitation: 10% <br />
-              Humidity: 72%, Wind: 14km/h   
-            </p>
-        </div>
-        <div>☁️-6&#176C
-        </div>
-    </main>
-
-<h1>City Current Weather</h1>
+    <input type="search" placeholder="Enter city name..." required class="search-city" id="search-city" />
+    <input type="submit" value="Search" class="search-button" />
+  </form>
+</header>
+<main>
+  <div class="current-weather">
+    <div>
+      <h1 class="current-city" id="current-city">Kingston, ON</h1>
+      <span class="current-temp-icon">☁️</span>
+      <span class="current-temp-value" id="current-temp">-6</span>
+      <span class="current-temp-unit">&#176;C</span>
+    </div>
+  
+      <p div class="current-conditions"></p>
+        <span id="current-date"></span>Moderate rain<br />
+        Precipitation: 10%<br />
+        Humidity: <strong>72%</strong>, Wind: <strong>14km/h</strong>
+      </p>
+     
+    </div>
+  </div>
+</main>
 <footer>
-    <p>
-        This project was coded by
-        <a href="https://github.com/leonem966-rgb" target="_blank">Maria Leone</a> and is
-        <a href="https://github.com/leonem966-rgb/MLFinalProject" target="_blank"> open-sourced on GitHub</a> and
-        <a href="https://mlfinalweatherproject.netlify.app/" target="_blank">hosted on Netlify</a>
-    </p>
+  <p>
+    This project was coded by
+    <a href="https://github.com/leonem966-rgb" target="_blank">Maria Leone</a> and is
+    <a href="https://github.com/leonem966-rgb/MLFinalProject" target="_blank"> open-sourced on GitHub</a> and
+    <a href="https://mlfinalweatherproject.netlify.app/" target="_blank">hosted on Netlify</a>
+  </p>
 </footer>
 </div>
 </body>
+<script src="src/index.js"></script>
 </html>
