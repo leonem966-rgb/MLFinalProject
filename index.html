@@ -9,29 +9,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+   <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script> 
     <title>Final Project Weather App</title>
 </head>
 <body>
 <div class="weather-app">
 <header>
   <form id="search-form">
-    <input type="search" placeholder="Enter city name..." required class="search-city" id="search-city" />
+    <input type="search" placeholder="Enter city name..." required class="search-input" id="search-input" />
     <input type="submit" value="Search" class="search-button" />
   </form>
 </header>
 <main>
   <div class="current-weather-temp">
     <div>
-      <h1 class="current-city" id="current-city">Kingston, ON</h1>
+      <h1 class="current-city" id="current-city"></h1>
       <span class="current-temp-icon">☁️</span>
-      <span class="current-temp-value" id="current-temp">-6</span>
+      <span class="current-temp-value" id="current-temp"></span>
       <span class="current-temp-unit">°C</span>
     </div>
     <div class="current-weather-conditions">
       <p class="current-conditions">
-        <span id="current-date"></span> </br> Moderate rain <br />
-        Humidity: <strong>72%</strong> </br>
-        Wind: <strong>14km/h</strong>
+       <span id="time">Sunday 11:54</span></br>
+        <span id="description"></span></br> 
+        Humidity: <strong id="humidity"></strong></br>
+        Wind: <strong id="wind-speed"></strong>
       </p>
     </div>
   </div>

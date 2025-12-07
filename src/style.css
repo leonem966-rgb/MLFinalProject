@@ -9,7 +9,7 @@ body {
 }
 
    
-  .search-city {
+  .search-input {
     width: 500px;
     padding: 10px 15px;
     border: 1px solid #ccc;
@@ -82,10 +82,11 @@ main    {
 
   .current-conditions {
     font-size: 16px;
+    font-weight: lighter;
     margin: 40px 5px;
     line-height: 1.5;
     position: relative;
-    left: 100px;
+    left: 50px;
     
 }
 
