@@ -7,23 +7,23 @@ function displayCityTemperature(response) {
    let descriptionElement = document.querySelector("#description");
    let humidityElement = document.querySelector("#humidity");
    let windSpeedElement = document.querySelector("#wind-speed");
-  
-   
+  let iconElement = document.querySelector("#icon");
 
+  
 cityElement.innerHTML = response.data.city;  
-timeElement.innerHTML = formatDate;    
+timeElement.innerHTML = formatDate(date);    
 temperatureElement.innerHTML = temperature;
 descriptionElement.innerHTML = response.data.condition.description;
 humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
 windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;  
-
+iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-temp-icon"/>`;
 
 }   
 
 function formatDate(date) {
   let minutes = date.getMinutes();
   let hours = date.getHours();
-  let day = date.getDay();
+  let day = date.getDate();
 
   if (minutes < 10) {
     minutes = `0${minutes}`;
@@ -43,14 +43,9 @@ function formatDate(date) {
     "Saturday",
   ];
 
-  let date = days[date.getDay()];
-  return `${day} ${hours}:${minutes}`;
+  let formattedDay = days[date.getDay()];
+  return `${formattedDay} ${day}, ${hours}:${minutes}`;
 }
-
-
-
-
-
 
 function searchCurrentCity(cityElement) {
     let apiKey = "abtb6a92443361bbdo4b8fd76decc014";

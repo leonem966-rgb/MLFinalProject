@@ -66,6 +66,8 @@ main    {
     top: -10px;
     font-size: 45px;
     margin-right: 10px;
+    width: 90px;
+    height: 90px;
 }
 
 .current-temp-value {
