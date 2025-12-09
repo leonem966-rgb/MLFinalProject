@@ -53,42 +53,51 @@ main    {
     margin: 20px 0;
     display: flex;  
     align-items: center;
+    padding-top: 0px auto;
 
 }
 
 .current-city {
     font-size: 48px;
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.current-temp-icon {
+.icon {
     position: relative;
-    top: -10px;
-    font-size: 45px;
-    margin-right: 10px;
-    width: 90px;
-    height: 90px;
+    top: 0px;
+    width: 100px;
+    height: 100px;
 }
 
 .current-temp-value {
+    display: inline-block;
     font-size: 80px;
     font-weight: bold;
+    position: relative;
+    top: -50px;      
+    
+    
 }
 
 .current-temp-unit {
     font-size: 20px;
     position: relative;
-    top: -42px;
+    top: -90px;
+    margin-left: 5px;
+   
 }
-
 
   .current-conditions {
     font-size: 16px;
     font-weight: lighter;
-    margin: 40px 5px;
     line-height: 1.5;
     position: relative;
-    left: 50px;
+    left: 300px;
+    float: right;
+    margin-top: -50px;
     
 }
 
