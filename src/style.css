@@ -50,44 +50,43 @@ main    {
 .current-weather-temp {
     font-size: 48px;
     font-weight: bold;
-    margin: 20px 0;
-    display: flex;  
-    align-items: center;
-    padding-top: 0px auto;
-
+    display: flex;
 }
 
 .current-city {
-    font-size: 48px;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   font-size: 55px;
+   position: relative;
+   left: 30px;
+   margin:auto;
+    
 }
 
 .icon {
-    position: relative;
-    top: 0px;
     width: 100px;
     height: 100px;
+    position: relative;
+    
 }
 
 .current-temp-value {
-    display: inline-block;
     font-size: 80px;
-    font-weight: bold;
     position: relative;
-    top: -50px;      
-    
+    top: -110px;
+    left: 120px;    
     
 }
 
 .current-temp-unit {
-    font-size: 20px;
+    font-size: 25px;
     position: relative;
-    top: -90px;
-    margin-left: 5px;
+    left: 200px;
+    bottom: 200px;   
    
+}
+
+.current-weather-conditions {
+    display: flex;
+    justify-content: space-between;
 }
 
   .current-conditions {
@@ -95,15 +94,51 @@ main    {
     font-weight: lighter;
     line-height: 1.5;
     position: relative;
-    left: 300px;
-    float: right;
-    margin-top: -50px;
+    left: 170px;
+    top: 40px;
     
 }
 
 .current-conditions strong {
     color: #f65282;
    
+}
+
+.range-forecast {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.range-forecast-date {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    line-height: 20px;
+    margin-bottom: 10px;
+
+}
+
+.range-forecast-icon {
+    font-size: 38px;
+    text-align: center;
+}
+
+.range-forecast-temperatures {
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   color: rgb (255, 0, 0);
+   margin-top: 10px;
+}
+
+.range-forecast-temperature {
+    padding: 0 10px;
+    }
+
+.range-forecast-temperature strong {
+    color: rgb(255, 0, 0);
 }
 
 footer {
