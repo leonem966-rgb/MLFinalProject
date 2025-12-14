@@ -66,9 +66,9 @@ function formatDay(timestamp) {
   return days[date.getDay()];
 }
 
-function getForecast(city) {
+function getForecast(cityElement) {
   let apiKey = "abtb6a92443361bbdo4b8fd76decc014";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${cityElement}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -93,6 +93,7 @@ function displayForecast(response) {
      </div>
   </div>
 `;
+    }  
   });
 
 let forecastElement = document.querySelector("#forecast");    
